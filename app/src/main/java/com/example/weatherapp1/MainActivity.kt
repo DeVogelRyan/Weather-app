@@ -15,7 +15,7 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
     val CITY: String = "huizingen,be"
-    val API: String = "5d0a0352af8d94f13096f5285569b080" // Use API key
+     val API=API() // Use API key
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             var response: String?
             try {
                 response =
-                    URL("https://api.openweathermap.org/data/2.5/weather?q=$CITY&units=metric&appid=$API").readText(
+                    URL("https://api.openweathermap.org/data/2.5/weather?q=$CITY&units=metric&appid=${API.API_key}").readText(
                         Charsets.UTF_8
                     )
             } catch (e: Exception) {
