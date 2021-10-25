@@ -1,6 +1,6 @@
 # Wheater App!
 This is an android app to view the weather.
-The Programming language I used is kotlin.
+The Programming language I used is Kotlin.
 
 
 ## See it in action:
